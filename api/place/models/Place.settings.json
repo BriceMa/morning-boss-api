@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "place",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Libele": {
+      "default": "",
+      "type": "string"
+    },
+    "ville": {
+      "default": "",
+      "type": "string"
+    },
+    "postal": {
+      "default": "",
+      "max": 99999,
+      "type": "biginteger"
+    },
+    "rue": {
+      "default": "",
+      "type": "string"
+    },
+    "indications": {
+      "default": "",
+      "type": "text"
+    },
+    "users": {
+      "collection": "user",
+      "via": "places",
+      "plugin": "users-permissions"
+    }
+  }
+}

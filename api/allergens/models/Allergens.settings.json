@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "allergens",
+  "info": {
+    "name": "allergens",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "vegan": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "lactose": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "gluten": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "product": {
+      "model": "product",
+      "via": "allergens"
+    }
+  }
+}

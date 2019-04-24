@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "order",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "timeDelivery": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "dateOrder": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "imageOrder": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "products": {
+      "collection": "product",
+      "via": "orders",
+      "dominant": true
+    },
+    "users": {
+      "collection": "user",
+      "via": "order",
+      "plugin": "users-permissions"
+    }
+  }
+}

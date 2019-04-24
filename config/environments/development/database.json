@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "morning-api-shard-00-00-cxsil.mongodb.net:27017,morning-api-shard-00-01-cxsil.mongodb.net:27017,morning-api-shard-00-02-cxsil.mongodb.net:27017/test?ssl=true&replicaSet=Morning-API-shard-0&authSource=admin&retryWrites=true",
+        "port": 27017,
+        "database": "test",
+        "username": "admin",
+        "password": "admin"
+      },
+      "options": {
+        "ssl": true      }
+    }
+  }
+}
+

@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "product",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "shortDesc": {
+      "default": "",
+      "maxLength": 30,
+      "type": "text",
+      "required": true
+    },
+    "longDesc": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "imageProduct": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "allergens": {
+      "collection": "allergens",
+      "via": "product"
+    },
+    "orders": {
+      "collection": "order",
+      "via": "products"
+    }
+  }
+}
