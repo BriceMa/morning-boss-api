@@ -27,8 +27,8 @@
     },
     "products": {
       "collection": "product",
-      "via": "orders",
-      "dominant": true
+      "dominant": true,
+      "via": "orders"
     },
     "users": {
       "collection": "user",
