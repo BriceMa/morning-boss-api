@@ -16,7 +16,7 @@
     },
     "shortDesc": {
       "default": "",
-      "maxLength": 60,
+      "maxLength": 80,
       "type": "text",
       "required": true
     },
@@ -43,6 +43,10 @@
       "default": "",
       "type": "string",
       "required": true
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "products"
     }
   }
 }
