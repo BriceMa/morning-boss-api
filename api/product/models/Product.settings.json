@@ -44,7 +44,7 @@
       "type": "string",
       "required": true
     },
-    "menus": {
+    "-": {
       "collection": "menu",
       "via": "products"
     }

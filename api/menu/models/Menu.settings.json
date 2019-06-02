@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "menu",
   "info": {
     "name": "menu",
     "description": ""
@@ -11,7 +11,7 @@
   "attributes": {
     "products": {
       "collection": "product",
-      "via": "menus",
+      "via": "-",
       "dominant": true
     }
   }
